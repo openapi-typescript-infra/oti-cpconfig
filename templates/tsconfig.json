@@ -1,0 +1,52 @@
+{
+  "//": "Managed by cpconfig",
+  "include": [
+    "@types/**/*",
+    "src/**/*",
+    "__tests__/**/*",
+    "__mocks__/**/*",
+    "coconfig.ts",
+    "next-env.d.ts",
+    "vitest.config.ts",
+    "panda.config.ts",
+    "tsup.config.ts",
+    "private/types/**/*.d.ts",
+    ".next/types/**/*.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ],
+  "compilerOptions": {
+    "lib": [
+      "ES2023",
+      "DOM"
+    ],
+    "incremental": true,
+    "tsBuildInfoFile": ".tsbuildinfo",
+    "target": "ES2023",
+    "module": "preserve",
+    "moduleResolution": "bundler",
+    "allowJs": true,
+    "preserveWatchOutput": true,
+    "strict": true,
+    "declaration": true,
+    "sourceMap": true,
+    "isolatedModules": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "resolveJsonModule": true,
+    "forceConsistentCasingInFileNames": true,
+    "jsx": "react-jsx",
+    "noEmit": true,
+    "skipLibCheck": true,
+    "paths": {
+      "*": ["./*"],
+      "#src/*": [
+        "./src/*"
+      ]
+    }
+  }
+}

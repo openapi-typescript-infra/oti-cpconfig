@@ -1,0 +1,23 @@
+{
+  "//": "Managed by cpconfig",
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "outDir": "build/"
+  },
+  "exclude": [
+    "src/**/*.spec.*",
+    "src/**/*.test.*",
+    "src/**/*.stories.*",
+    "src/**/*.chromatic.*",
+    "src/**/*.fixtures.*",
+    "src/codegen",
+    "__tests__/**/*",
+    "__mocks__/**/*",
+    "coconfig.*",
+    "next-env.d.ts",
+    "vitest.config.*",
+    "panda.config.ts",
+    "tsup.config.ts"
+  ]
+}

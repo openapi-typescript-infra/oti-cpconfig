@@ -1,0 +1,76 @@
+{
+  "name": "@openapi-typescript-infra/cpconfig",
+  "version": "0.0.0",
+  "description": "Standard Typescript/Node/React configuration for @openapi-typescript-infra projects",
+  "main": "./dist/index.js",
+  "exports": "./dist/index.js",
+  "type": "module",
+  "types": "dist/index.d.ts",
+  "author": "Developers <developers@pyralis.com>",
+  "license": "UNLICENSED",
+  "packageManager": "yarn@3.8.5",
+  "imports": {
+    "#src/*": "./src/*"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "clean": "yarn dlx rimraf ./dist",
+    "lint": "eslint .",
+    "postinstall": "cpconfig",
+    "test": "vitest"
+  },
+  "files": [
+    "dist",
+    "src",
+    "templates"
+  ],
+  "keywords": [
+    "typescript"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/openapi-typescript-infra/oti-cpconfig.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "release": {
+    "branches": [
+      "main"
+    ],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      [
+        "@semantic-release/exec",
+        {
+          "publishCmd": "yarn dlx pinst --disable"
+        }
+      ],
+      "@semantic-release/npm",
+      "@semantic-release/github"
+    ]
+  },
+  "config": {
+    "cpconfig": "./src/index.ts"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.46.3",
+    "@typescript-eslint/parser": "^8.46.3",
+    "cpconfig": "^1.3.1",
+    "eslint": "^9.39.1",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-import-resolver-typescript": "^4.4.4",
+    "eslint-plugin-import": "^2.32.0",
+    "jiti": "^2.6.1",
+    "prettier": "^3.6.2",
+    "typescript-eslint": "^8.46.3"
+  },
+  "devDependencies": {
+    "@semantic-release/exec": "^7.1.0",
+    "@semantic-release/github": "^12.0.1",
+    "@types/node": "^24.10.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.7"
+  }
+}
