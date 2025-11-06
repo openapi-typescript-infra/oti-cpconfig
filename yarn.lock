@@ -568,7 +568,7 @@ __metadata:
     "@types/node": ^24.10.0
     "@typescript-eslint/eslint-plugin": ^8.46.3
     "@typescript-eslint/parser": ^8.46.3
-    cpconfig: ^1.3.1
+    cpconfig: ^1.4.0
     eslint: ^9.39.1
     eslint-config-prettier: ^10.1.8
     eslint-import-resolver-typescript: ^4.4.4
@@ -1609,12 +1609,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cpconfig@npm:^1.3.1":
-  version: 1.3.1
-  resolution: "cpconfig@npm:1.3.1"
+"cpconfig@npm:^1.4.0":
+  version: 1.4.0
+  resolution: "cpconfig@npm:1.4.0"
   bin:
     cpconfig: build/cli.js
-  checksum: ebe6bcf24242bcdedd129ff4bfb953652bcd594cf2bb493a68ab4add7cb2b88e0fe7adeb7729d60837ced97952e38ac048ed9a9639a4ef0abbddbb493da006c4
+  checksum: 794e09cc39dd69cb390255c882ac4b2f2fbce863c836f4537da98a94bf794ab56fb29bcb310efa66b9cba533ab96447a9be5ac03acd7ceedde827ef26f0df01c
   languageName: node
   linkType: hard
 

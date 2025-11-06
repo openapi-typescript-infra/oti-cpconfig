@@ -87,7 +87,7 @@ export default defineConfig([
   {
     ignores: [
       '.github/**',
-      'dist/**',
+      'build/**',
       'private/**',
       'public/**',
       'coverage',
