@@ -20,7 +20,7 @@
     "test": "vitest"
   },
   "files": [
-    "dist",
+    "build",
     "src",
     "templates"
   ],
