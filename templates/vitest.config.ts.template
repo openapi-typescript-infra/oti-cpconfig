@@ -44,6 +44,12 @@ export default async function vitestConfig() {
   if (fs.existsSync('__tests__/vitest.setup.ts')) {
     testConfig.globalSetup = '__tests__/vitest.setup.ts';
   }
+  if (fs.existsSync('__tests__/vitest.test-setup.ts')) {
+    testConfig.setupFiles = [
+      ...(testConfig.setupFiles || []),
+      '__tests__/vitest.test-setup.ts'
+    ];
+  }
 
   if (hasPackage('js-yaml')) {
     config.plugins = config.plugins || [];
